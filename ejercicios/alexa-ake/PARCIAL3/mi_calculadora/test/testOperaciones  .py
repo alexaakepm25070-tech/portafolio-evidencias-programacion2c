@@ -1,5 +1,5 @@
 import unittest
-from mi_calculadora.src.operaciones import suma, resta, multi, divi, expo
+from src.operaciones import suma, resta, multi, divi, expo
 
 class TestOperaciones(unittest.TestCase):
 
@@ -29,7 +29,7 @@ class TestOperaciones(unittest.TestCase):
 
     def test_multi_mixta(self):
         self.assertEqual(multi(-2, 3), -6)
-
+ 
     def test_divi_basica(self):
         self.assertEqual(divi(10, 2), 5)
 
