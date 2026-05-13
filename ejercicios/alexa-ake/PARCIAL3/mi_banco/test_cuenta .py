@@ -60,8 +60,7 @@ class TestCuenta(unittest.TestCase):
         result = self.cuenta.retiro(0)
         self.assertFalse(result)
         self.assertEqual(self.cuenta.saldo, 300, "El saldo actual debería ser de 300.00")
-if _name_ == "_main_":
-    unittest.main()
+
 
     #test para validar cantidad mayor al saldo
     def test_retirar_dinero_mayor_saldo(self):
@@ -70,6 +69,8 @@ if _name_ == "_main_":
         self.assertFalse(result)
         self.assertEqual(self.cuenta.saldo, 300, "El saldo actual debería ser de 300.00")
 
+if __name__== "_main_":
+    unittest.main()
 
 
 
