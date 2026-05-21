@@ -1,7 +1,14 @@
 class Cuenta:
     """
-    Clase que representa una cuenta bancaria.
-    """
+    Clase que representa una cuenta bancaria. 
+    
+        ATRIBUTTES
+            cliente (str): Nombre del cliente.
+            cuenta (str): Número de cuenta.
+            saldo (float): Saldo inicial.
+
+
+         """
     
     def _init_(self, cliente, cuenta, saldo):
         """
@@ -50,5 +57,5 @@ def main():
     """Función principal del programa."""
     pass
 
-if __name__== '_main_':
-    main()
+
+
