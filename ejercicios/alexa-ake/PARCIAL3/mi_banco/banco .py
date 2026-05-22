@@ -1,4 +1,4 @@
-from Cuenta import Cuenta 
+from cuenta import Cuenta 
 
 class  Banco:
 

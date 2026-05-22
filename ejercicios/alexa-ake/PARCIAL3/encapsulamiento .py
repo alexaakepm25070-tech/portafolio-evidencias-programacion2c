@@ -1,21 +1,27 @@
 class cuentaBancaria:
     def _init_(self, saldo):
-        self._saldo = saldo # _saldo, _saldo
+        self._titular= saldo 
 
+    def set_saldo(self):
+        self._saldo = saldo
+
+ 
+    def get_saldo(self):
+        return self._saldo
+    
     def depositar(self, cantidad):
         self._saldo += cantidad
-      
+
     def retirar(self, cantidad):
         if cantidad <= self._saldo:
             self._saldo -= cantidad
 
         else:
-            print("Fondos insuficientes")
+         print("Fondos insuficientes")
+
 
     def mostrar_saldo(self):
         print(f"Saldo: {self._saldo}")
-
-
 
 cuenta = cuentaBancaria(5000)
 cuenta.set_saldo(-5000)
